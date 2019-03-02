@@ -1,0 +1,24 @@
+{
+  "name": "resting-with-node",
+  "version": "1.0.0",
+  "description": "Exploring Node server + REST",
+  "main": "index.js",
+  "author": "risjai",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "mongoose": "^5.4.16"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "nodemon": "^1.18.10"
+  },
+  "scripts": { 
+    "start": "nodemon server.js --exec babel-node --presets env", 
+    "release": "npm run clean && npm run build && npm run serve", 
+    "clean": "rm -rf dist && mkdir dist", "build": "babel . -s -D -d dist --presets env --ignore node_modules", 
+    "serve": "node dist/server.js" ,
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }, 
+}
