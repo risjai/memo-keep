@@ -6,7 +6,7 @@
   "author": "risjai",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.16.4",
+    "express": "^4.18.2",
     "mongoose": "^5.4.16"
   },
   "devDependencies": {
